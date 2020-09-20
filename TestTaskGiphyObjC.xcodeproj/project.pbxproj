@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BFC5BC5D265CE04A22BA0C6 /* Pods_TestTaskGiphyObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B5DD77D18F0FD1AD32CD74 /* Pods_TestTaskGiphyObjC.framework */; };
+		44063C522500F63600CBBFFA /* Debouncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 44063C512500F63600CBBFFA /* Debouncer.m */; };
+		4409794824F98683004454F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4409794724F98683004454F8 /* MainViewController.m */; };
+		44903AA124FD77A700F8F868 /* GiphyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 44903AA024FD77A700F8F868 /* GiphyLayout.m */; };
+		44BD3B2224FAD551001D9CF0 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BD3B2124FAD551001D9CF0 /* CollectionViewCell.m */; };
+		44BD3B2624FAD667001D9CF0 /* Giphy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BD3B2524FAD667001D9CF0 /* Giphy.m */; };
+		44BD3B2824FAD8ED001D9CF0 /* GiphyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 44BD3B2724FAD8ED001D9CF0 /* GiphyService.m */; };
+		7D27452A220FEE2500CF03CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D274529220FEE2500CF03CE /* AppDelegate.m */; };
+		7D274532220FEE2700CF03CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D274531220FEE2700CF03CE /* Assets.xcassets */; };
+		7D274535220FEE2700CF03CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D274533220FEE2700CF03CE /* LaunchScreen.storyboard */; };
+		7D274538220FEE2700CF03CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D274537220FEE2700CF03CE /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1435270C5620C4545297B1E2 /* Pods-TestTaskGiphyObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskGiphyObjC.release.xcconfig"; path = "Target Support Files/Pods-TestTaskGiphyObjC/Pods-TestTaskGiphyObjC.release.xcconfig"; sourceTree = "<group>"; };
+		27B5DD77D18F0FD1AD32CD74 /* Pods_TestTaskGiphyObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestTaskGiphyObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44063C502500F62700CBBFFA /* Debouncer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Debouncer.h; sourceTree = "<group>"; };
+		44063C512500F63600CBBFFA /* Debouncer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Debouncer.m; sourceTree = "<group>"; };
+		44063C532500FA5E00CBBFFA /* BlockHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockHandlers.h; sourceTree = "<group>"; };
+		4409794624F98659004454F8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4409794724F98683004454F8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		44903A9F24FD779D00F8F868 /* GiphyLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiphyLayout.h; sourceTree = "<group>"; };
+		44903AA024FD77A700F8F868 /* GiphyLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiphyLayout.m; sourceTree = "<group>"; };
+		44BD3B2124FAD551001D9CF0 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		44BD3B2324FAD559001D9CF0 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		44BD3B2424FAD65C001D9CF0 /* Giphy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Giphy.h; sourceTree = "<group>"; };
+		44BD3B2524FAD667001D9CF0 /* Giphy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Giphy.m; sourceTree = "<group>"; };
+		44BD3B2724FAD8ED001D9CF0 /* GiphyService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiphyService.m; sourceTree = "<group>"; };
+		44BD3B2924FAD8F5001D9CF0 /* GiphyService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiphyService.h; sourceTree = "<group>"; };
+		7D274525220FEE2500CF03CE /* TestTaskGiphyObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTaskGiphyObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D274528220FEE2500CF03CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D274529220FEE2500CF03CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7D274531220FEE2700CF03CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D274534220FEE2700CF03CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D274536220FEE2700CF03CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D274537220FEE2700CF03CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DC5DAE92211773E00AB8C58 /* AlertDisplayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertDisplayer.h; sourceTree = "<group>"; };
+		96D715F2003D708001074071 /* Pods-TestTaskGiphyObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskGiphyObjC.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskGiphyObjC/Pods-TestTaskGiphyObjC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D274522220FEE2500CF03CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFC5BC5D265CE04A22BA0C6 /* Pods_TestTaskGiphyObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1681154B52B72800433F7672 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27B5DD77D18F0FD1AD32CD74 /* Pods_TestTaskGiphyObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4409794524F9863B004454F8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4409794624F98659004454F8 /* MainViewController.h */,
+				4409794724F98683004454F8 /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		44903A9E24FD777500F8F868 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				44903A9F24FD779D00F8F868 /* GiphyLayout.h */,
+				44903AA024FD77A700F8F868 /* GiphyLayout.m */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		44BD3B2024FAD536001D9CF0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44BD3B2324FAD559001D9CF0 /* CollectionViewCell.h */,
+				44BD3B2124FAD551001D9CF0 /* CollectionViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7D27451C220FEE2500CF03CE = {
+			isa = PBXGroup;
+			children = (
+				7D274527220FEE2500CF03CE /* TestTaskGiphyObjC */,
+				7D274526220FEE2500CF03CE /* Products */,
+				E19D88614D3F3248D7F2A107 /* Pods */,
+				1681154B52B72800433F7672 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7D274526220FEE2500CF03CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D274525220FEE2500CF03CE /* TestTaskGiphyObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D274527220FEE2500CF03CE /* TestTaskGiphyObjC */ = {
+			isa = PBXGroup;
+			children = (
+				7D274536220FEE2700CF03CE /* Info.plist */,
+				7D27453E220FEF6C00CF03CE /* Resource */,
+				7D81AA8A2210955200C4AD3D /* Source */,
+			);
+			path = TestTaskGiphyObjC;
+			sourceTree = "<group>";
+		};
+		7D27453E220FEF6C00CF03CE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7D274531220FEE2700CF03CE /* Assets.xcassets */,
+				7D274533220FEE2700CF03CE /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7D81AA7D22104DBA00C4AD3D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				44BD3B2924FAD8F5001D9CF0 /* GiphyService.h */,
+				44BD3B2724FAD8ED001D9CF0 /* GiphyService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		7D81AA87221094A000C4AD3D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7D81AA89221094F800C4AD3D /* App */,
+				44903A9E24FD777500F8F868 /* Layouts */,
+				7DC5DAE82211647A00AB8C58 /* Model */,
+				7D81AA7D22104DBA00C4AD3D /* Service */,
+				7D81AA88221094AE00C4AD3D /* Utils */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		7D81AA88221094AE00C4AD3D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7DC5DAE92211773E00AB8C58 /* AlertDisplayer.h */,
+				44063C532500FA5E00CBBFFA /* BlockHandlers.h */,
+				44063C502500F62700CBBFFA /* Debouncer.h */,
+				44063C512500F63600CBBFFA /* Debouncer.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7D81AA89221094F800C4AD3D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7D274528220FEE2500CF03CE /* AppDelegate.h */,
+				7D274529220FEE2500CF03CE /* AppDelegate.m */,
+				7D274537220FEE2700CF03CE /* main.m */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7D81AA8A2210955200C4AD3D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7D81AA8B2210964C00C4AD3D /* Feature */,
+				7D81AA87221094A000C4AD3D /* Library */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7D81AA8B2210964C00C4AD3D /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				4409794524F9863B004454F8 /* Main */,
+				44BD3B2024FAD536001D9CF0 /* Cell */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		7DC5DAE82211647A00AB8C58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44BD3B2424FAD65C001D9CF0 /* Giphy.h */,
+				44BD3B2524FAD667001D9CF0 /* Giphy.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E19D88614D3F3248D7F2A107 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96D715F2003D708001074071 /* Pods-TestTaskGiphyObjC.debug.xcconfig */,
+				1435270C5620C4545297B1E2 /* Pods-TestTaskGiphyObjC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D274524220FEE2500CF03CE /* TestTaskGiphyObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D27453B220FEE2700CF03CE /* Build configuration list for PBXNativeTarget "TestTaskGiphyObjC" */;
+			buildPhases = (
+				57E6ACFAD620407829891298 /* [CP] Check Pods Manifest.lock */,
+				7D274521220FEE2500CF03CE /* Sources */,
+				7D274522220FEE2500CF03CE /* Frameworks */,
+				7D274523220FEE2500CF03CE /* Resources */,
+				EF172474C209806EFFABDDC4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestTaskGiphyObjC;
+			productName = TestTaskAlarStudiosObjC;
+			productReference = 7D274525220FEE2500CF03CE /* TestTaskGiphyObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D27451D220FEE2500CF03CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = varton;
+				TargetAttributes = {
+					7D274524220FEE2500CF03CE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 7D274520220FEE2500CF03CE /* Build configuration list for PBXProject "TestTaskGiphyObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D27451C220FEE2500CF03CE;
+			productRefGroup = 7D274526220FEE2500CF03CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D274524220FEE2500CF03CE /* TestTaskGiphyObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D274523220FEE2500CF03CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D274535220FEE2700CF03CE /* LaunchScreen.storyboard in Resources */,
+				7D274532220FEE2700CF03CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57E6ACFAD620407829891298 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskGiphyObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF172474C209806EFFABDDC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskGiphyObjC/Pods-TestTaskGiphyObjC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskGiphyObjC/Pods-TestTaskGiphyObjC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskGiphyObjC/Pods-TestTaskGiphyObjC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D274521220FEE2500CF03CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44903AA124FD77A700F8F868 /* GiphyLayout.m in Sources */,
+				44063C522500F63600CBBFFA /* Debouncer.m in Sources */,
+				4409794824F98683004454F8 /* MainViewController.m in Sources */,
+				7D274538220FEE2700CF03CE /* main.m in Sources */,
+				44BD3B2824FAD8ED001D9CF0 /* GiphyService.m in Sources */,
+				7D27452A220FEE2500CF03CE /* AppDelegate.m in Sources */,
+				44BD3B2624FAD667001D9CF0 /* Giphy.m in Sources */,
+				44BD3B2224FAD551001D9CF0 /* CollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D274533220FEE2700CF03CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D274534220FEE2700CF03CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7D274539220FEE2700CF03CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7D27453A220FEE2700CF03CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D27453C220FEE2700CF03CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D715F2003D708001074071 /* Pods-TestTaskGiphyObjC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestTaskGiphyObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.varton.TestTaskGiphyObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7D27453D220FEE2700CF03CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1435270C5620C4545297B1E2 /* Pods-TestTaskGiphyObjC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = TestTaskGiphyObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.varton.TestTaskGiphyObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D274520220FEE2500CF03CE /* Build configuration list for PBXProject "TestTaskGiphyObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D274539220FEE2700CF03CE /* Debug */,
+				7D27453A220FEE2700CF03CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D27453B220FEE2700CF03CE /* Build configuration list for PBXNativeTarget "TestTaskGiphyObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D27453C220FEE2700CF03CE /* Debug */,
+				7D27453D220FEE2700CF03CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D27451D220FEE2500CF03CE /* Project object */;
+}
