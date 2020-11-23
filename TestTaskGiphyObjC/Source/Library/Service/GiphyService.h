@@ -18,7 +18,7 @@ static NSString * const ENDPOINT = @"https://api.giphy.com/v1/gifs/search?api_ke
 
 @interface GiphyService : NSObject
 
-@property (nonatomic, strong) id <GiphyServiceDelegate> delegate;
+@property (nonatomic, weak) id <GiphyServiceDelegate> delegate;
 
 - (instancetype)initWithApiKey:(NSString *)api_key;
 - (void)fetchDataWithSearchKey:(NSString *)aKey;
